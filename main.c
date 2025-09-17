@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "source/forge.h"
 #include "source/imagine.h"
 #include "source/betray.h"
@@ -8,6 +9,28 @@
 #define SEDUCE_T_SIZE 0.007        /* default text size */
 #define SEDUCE_T_SPACE 0.2         /* default letter spacing */
 #define SEDUCE_T_LINE_SPACEING 2.5 /* default line spacing */
+
+void seduce_tutorial_side_panel(BInputState *input, RMatrix *matrix)
+{
+    static float window_pos[3] = {0, 0, 0};
+    double aspect;
+
+    aspect = betray_screen_mode_get(NULL, NULL, NULL);
+    if (input->mode == BAM_DRAW)
+    {
+        SeduceBackgroundObject *obj;
+        obj = seduce_background_object_allocate();
+
+        seduce_background_square_add(obj, NULL, 0,
+                                     -1, -aspect, 0,
+                                     window_pos[0] + 1.0, aspect * 2.0,
+                                     0.2, 0.6, 1.0, 1.0);
+
+        seduce_primitive_surface_draw(input, obj, 1.0);
+        seduce_primitive_background_object_free(obj);
+    }
+    seduce_manipulator_point_axis(input, matrix, window_pos, window_pos, NULL, FALSE, 0, 1);
+}
 
 void seduce_tutorial_main_loop_func(BInputState *input, void *user_pointer)
 {
@@ -23,7 +46,7 @@ void seduce_tutorial_main_loop_func(BInputState *input, void *user_pointer)
         r_matrix_identity(&matrix);
         r_matrix_frustum(&matrix, -0.01, 0.01, -0.01 * aspect, 0.01 * aspect, 0.01, 100.0);
         r_matrix_translate(&matrix, 0, 0, -1);
-        r_framebuffer_clear(0.2, 0.0, 0.6, 0, TRUE, TRUE);
+        r_framebuffer_clear(0.0, 0.0, 0.0, 0.0, TRUE, TRUE);
         r_matrix_set(&matrix);
         r_viewport(0, 0, x_size, y_size);
         string = seduce_translate("Hello World");
@@ -34,6 +57,7 @@ void seduce_tutorial_main_loop_func(BInputState *input, void *user_pointer)
     if (input->mode == BAM_EVENT)
         if (betray_button_get(-1, BETRAY_BUTTON_F10))
             exit(0);
+    seduce_tutorial_side_panel(input, &matrix);
 
     string = seduce_translate("Exit");
 
@@ -42,7 +66,7 @@ void seduce_tutorial_main_loop_func(BInputState *input, void *user_pointer)
 
     if (input->mode == BAM_DRAW)
         r_matrix_set(NULL);
-    seduce_element_endframe(input, FALSE);
+    seduce_element_endframe(input, TRUE);
 }
 
 int main(int argc, char **argv)
