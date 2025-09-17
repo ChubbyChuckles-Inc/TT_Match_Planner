@@ -6,13 +6,18 @@
 #include "source/relinquish.h"
 #include "source/seduce.h"
 
+char *seduce_sample_text = "The legendary former hitman Tarou Sakamoto has thwarted numerous assassins after an enormous bounty on his head was issued. But he cannot seem to catch a break and simply take it easy with his beloved family. A mysterious and infamous figure known as Slur has brought a group of insane death row inmates to Japan, who hold back from nothing to eliminate their targets. Sakamoto is not the only target—the criminals have been assigned to kill various other people, including the new hires at Sakamoto's convenience store, Shin Asakura and Lu Shaotang. The situation escalates even further when the Order, a group of the most skilled Japanese assassins, becomes involved. As the inmates begin wreaking havoc, Sakamoto and his allies must remain vigilant for the sake of everything they hold dear.";
+
 #define SEDUCE_T_SIZE 0.007        /* default text size */
 #define SEDUCE_T_SPACE 0.2         /* default letter spacing */
 #define SEDUCE_T_LINE_SPACEING 2.5 /* default line spacing */
 
 void seduce_tutorial_side_panel(BInputState *input, RMatrix *matrix)
 {
-    static float window_pos[3] = {0, 0, 0};
+    static float window_pos[3] = {0, 1, 0}, a[3] = {0, -1, 0}, b[3] = {0, 1, 0};
+    static char text[256] = {'A', 'B', 'C', 0};
+    STextBlockMode modes;
+
     double aspect;
 
     aspect = betray_screen_mode_get(NULL, NULL, NULL);
@@ -28,8 +33,23 @@ void seduce_tutorial_side_panel(BInputState *input, RMatrix *matrix)
 
         seduce_primitive_surface_draw(input, obj, 1.0);
         seduce_primitive_background_object_free(obj);
+        a[0] = b[0] = window_pos[0];
+        seduce_element_add_line(input, window_pos, 0, a, b, 0.1); /* Adds a line segment shaped element. */
     }
-    seduce_manipulator_point_axis(input, matrix, window_pos, window_pos, NULL, FALSE, 0, 1);
+
+    seduce_text_edit_line(input, text, NULL, text, 256, -1, aspect - SEDUCE_T_SIZE * 3 * 10, window_pos[0] + 1.0, SEDUCE_T_SIZE * 10, "Put text here", TRUE, NULL, NULL, 0.7, 0.7, 0.7, 1.0, 1.0, 1.0, 1.0, 1.0);
+
+    modes.character_position = 0;            /* the first character in the text for this STextBlockMode to be applied to*/
+    modes.font = seduce_font_default_get();  /* Font */
+    modes.red = 0.8;                         /* Red color component of text */
+    modes.green = 0.8;                       /* Green color component of text */
+    modes.blue = 0.8;                        /* Blue color component of text */
+    modes.alpha = 1.0;                       /* Alpha component of text */
+    modes.letter_size = SEDUCE_T_SIZE * 3.0; /* Size of characters */
+    modes.letter_spacing = SEDUCE_T_SPACE;   /* Added spacing between characters. Useful for non-monospaced fonts. */
+
+    seduce_text_block_draw(-0.9, aspect - SEDUCE_T_SIZE * 6 * 10, window_pos[0] + 0.8, 0.5, SEDUCE_T_LINE_SPACEING, SEDUCE_TBAS_STRETCH, seduce_sample_text, 0, &modes, 1);
+    seduce_manipulator_point_axis(input, matrix, window_pos, window_pos, NULL, FALSE, 0, 0);
 }
 
 void seduce_tutorial_main_loop_func(BInputState *input, void *user_pointer)
