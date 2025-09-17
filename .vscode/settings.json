@@ -1,0 +1,25 @@
+{
+  // CMake Tools settings
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  // Default generator for MSVC on Windows. Adjust if you have a different version installed.
+  "cmake.generator": "Visual Studio 17 2022",
+  // Automatically configure when opening the folder
+  "cmake.configureOnOpen": true,
+
+  // C/C++ extension: use MSVC for IntelliSense and code browsing
+  "C_Cpp.default.compilerPath": "cl.exe",
+  "C_Cpp.default.intelliSenseMode": "msvc-x64",
+  "C_Cpp.default.cStandard": "c99",
+  // Add include path for the Quel Solaar libraries under source/
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/source",
+    "${workspaceFolder}/source/**"
+  ],
+  // Windows defines commonly used by the codebase
+  "C_Cpp.default.defines": [
+    "_WIN32",
+    "WIN32",
+    "_CRT_SECURE_NO_WARNINGS"
+  ]
+}

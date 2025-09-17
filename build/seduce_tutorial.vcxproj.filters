@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\b_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\b_win32_key_codes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\b_win32_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_math.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_matrix_make.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_matrix_operations.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_mem_debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_noise.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_path.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_sort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_types.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\f_utf8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\i_dir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\i_library.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\i_settings.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\i_threads.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\i_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_draw_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_draw_extensions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_draw_framebuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_draw_parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_draw_primitive.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_draw_shader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_draw_state.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_draw_uniform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_matrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_background.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_background_old.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_draw_3d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_abel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_arial.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_eurasia.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_impact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_lane.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_lato.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_luke.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_oswald.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_sansumi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_times.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_verdana.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_font_verdana2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_lens.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_lines.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_manipulator_point.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_manipulator_rotate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_manipulator_scale.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_manipulator_space.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_particles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_popup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_popup_detect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_projection.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_select.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_settings_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_settings_window2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_sort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_text_edit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_text_exporter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_text_file_format.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_text_output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_text_widget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_translate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_widget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_widget_radial.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\b_keys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\betray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\forge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\imagine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\r_include.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\relinquish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_draw_3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\s_text_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\source\seduce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Chuck\Desktop\CR_AI_Engineering\GameDev\Seduce_Tutorial\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{90874C5A-E437-3CCB-92E5-A02969CE3473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{746F022E-3F15-3CEB-AA3C-9605B740388F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

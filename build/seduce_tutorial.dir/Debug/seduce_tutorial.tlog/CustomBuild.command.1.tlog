@@ -1,0 +1,10 @@
+^C:\USERS\CHUCK\DESKTOP\CR_AI_ENGINEERING\GAMEDEV\SEDUCE_TUTORIAL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Chuck/Desktop/CR_AI_Engineering/GameDev/Seduce_Tutorial -BC:/Users/Chuck/Desktop/CR_AI_Engineering/GameDev/Seduce_Tutorial/build --check-stamp-file C:/Users/Chuck/Desktop/CR_AI_Engineering/GameDev/Seduce_Tutorial/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

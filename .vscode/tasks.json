@@ -1,0 +1,54 @@
+{
+  // Tasks to configure, build, clean, and run the CMake project
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake: Configure",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "command": "cmake -S . -B build -G \"Visual Studio 17 2022\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "CMake: Build (Debug)",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/build"
+      },
+      "command": "cmake --build . --config Debug",
+      "problemMatcher": "$msCompile",
+      "dependsOn": ["CMake: Configure"]
+    },
+    {
+      "label": "CMake: Build (Release)",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/build"
+      },
+      "command": "cmake --build . --config Release",
+      "problemMatcher": "$msCompile",
+      "dependsOn": ["CMake: Configure"]
+    },
+    {
+      "label": "CMake: Clean",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/build"
+      },
+      "command": "cmake --build . --target clean",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run (Debug)",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}/build/Debug"
+      },
+      // Use PowerShell-compatible invocation to run the built exe
+      "command": "${workspaceFolder}/build/Debug/seduce_tutorial.exe",
+      "dependsOn": ["CMake: Build (Debug)"]
+    }
+  ]
+}

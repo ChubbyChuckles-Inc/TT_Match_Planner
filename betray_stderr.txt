@@ -1,0 +1,5 @@
+r_array_grow: grew pool to 60672 vertices (vertex_size=8)
+r_array_grow: grew pool to 71656 vertices (vertex_size=8)
+r_array_grow: grew pool to 524534 vertices (vertex_size=8)
+r_array_grow: grew pool to 82208 vertices (vertex_size=8)
+r_array_grow: grew pool to 353884 vertices (vertex_size=8)
