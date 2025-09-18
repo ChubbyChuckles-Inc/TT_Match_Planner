@@ -17,7 +17,7 @@ void seduce_tutorial_side_panel(BInputState *input, RMatrix *matrix)
     static float window_pos[3] = {0, 1, 0}, a[3] = {0, -1, 0}, b[3] = {0, 1, 0};
     static char text[256] = {'A', 'B', 'C', 0};
     STextBlockMode modes;
-
+    uint text_end;
     double aspect;
 
     aspect = betray_screen_mode_get(NULL, NULL, NULL);
@@ -37,7 +37,7 @@ void seduce_tutorial_side_panel(BInputState *input, RMatrix *matrix)
         seduce_element_add_line(input, window_pos, 0, a, b, 0.1); /* Adds a line segment shaped element. */
     }
 
-    seduce_text_edit_line(input, text, NULL, text, 256, -1, aspect - SEDUCE_T_SIZE * 3 * 10, window_pos[0] + 1.0, SEDUCE_T_SIZE * 10, "Put text here", TRUE, NULL, NULL, 0.7, 0.7, 0.7, 1.0, 1.0, 1.0, 1.0, 1.0);
+    seduce_text_edit_line(input, text, NULL, text, 256, -0.9, aspect - SEDUCE_T_SIZE * 3 * 10, window_pos[0] + 0.8, SEDUCE_T_SIZE * 10, "Put text here", TRUE, NULL, NULL, 0.7, 0.7, 0.7, 1.0, 1.0, 1.0, 1.0, 1.0);
 
     modes.character_position = 0;            /* the first character in the text for this STextBlockMode to be applied to*/
     modes.font = seduce_font_default_get();  /* Font */
@@ -48,7 +48,8 @@ void seduce_tutorial_side_panel(BInputState *input, RMatrix *matrix)
     modes.letter_size = SEDUCE_T_SIZE * 3.0; /* Size of characters */
     modes.letter_spacing = SEDUCE_T_SPACE;   /* Added spacing between characters. Useful for non-monospaced fonts. */
 
-    seduce_text_block_draw(-0.9, aspect - SEDUCE_T_SIZE * 6 * 10, window_pos[0] + 0.8, 0.5, SEDUCE_T_LINE_SPACEING, SEDUCE_TBAS_STRETCH, seduce_sample_text, 0, &modes, 1);
+    text_end = seduce_text_block_draw(-0.9, aspect - SEDUCE_T_SIZE * 6 * 10, window_pos[0] + 0.8, 0.5, SEDUCE_T_LINE_SPACEING, SEDUCE_TBAS_STRETCH, seduce_sample_text, 0, &modes, 1);
+    seduce_text_block_draw(window_pos[0] + 0.1, aspect - SEDUCE_T_SIZE * 6 * 10, 0.8 - window_pos[0], 0.5, SEDUCE_T_LINE_SPACEING, SEDUCE_TBAS_STRETCH, seduce_sample_text, text_end, &modes, 1);
     seduce_manipulator_point_axis(input, matrix, window_pos, window_pos, NULL, FALSE, 0, 0);
 }
 

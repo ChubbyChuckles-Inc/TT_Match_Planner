@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <ROOT>
-	<SCREEN_RES_Y>699</SCREEN_RES_Y> <!-- This value represents the window_height -->
-	<SCREEN_RES_X>1040</SCREEN_RES_X> <!-- This value represents the window_width -->
+	<SCREEN_RES_Y>1169</SCREEN_RES_Y> <!-- This value represents the window_height -->
+	<SCREEN_RES_X>1834</SCREEN_RES_X> <!-- This value represents the window_width -->
 </ROOT>
